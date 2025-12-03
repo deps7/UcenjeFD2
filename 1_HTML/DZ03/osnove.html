@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="osnove.css">
+    <link rel="stylesheet" href="zadatak.html">
+</head>
+<body>
+<section class="colored">
+    <h1>Osnove CSS rasporeda</h1>
+    <h2>Tri ključne tehnike: Flexbox, Grid i Float</h2>
+    <pre><h3>
+<a href="#flexbox-section" id="color">Flexbox</a>  <a href="#grid-section" id="color">Grid</a>  <a href="#float-section" id="color">Float</a>
+    </h3></pre>
+    <a href="zadatak.html">Povratak</a>
+</section>
+
+<section class="text1" id="flexbox-section">
+    <hr />
+    <h2>1. Fleksibilni model kutija (Flexbox)</h2>
+    <p><strong>Flexbox</strong> je jednodimenzionalni model rasporeda dizajnirn za distribuciju prostora između stavki u spremniku i moćnu mogućnost poravnanja. Idealan je za navigaciju, male komponente i centriranje elemenata.</p>
+
+<div class="blue-box">
+    <div class="stavka">Stavka 1</div>
+    <div class="stavka">Stavka 2</div>
+    <div class="stavka">Stavka 3</div>
+</div>
+<p>Ovdje je prikazano poravnanje i automatska prilagodba veličine stavki unutar reda.</p>
+</section>
+
+<section class="text2" id="grid-section">
+    <hr />
+    <h2>2. Dvodimenzionalni model mreže (CSS Grid)</h2>
+    <p><strong>CSS Grid</strong> je dvodimenzionalni sustav rasporeda (redovi i stupci). Savršen je za dizajniranje cjelokupnog rasporeda stranice (main layout) gdje želite pozicioniranje elemenata.</p>
+
+<div class="green-box">
+    <div class="a">Zaglavlje</div>
+    <div class="b"><p>Nav.</p></div>
+    <div class="c"><p>Sadržaj</p></div>
+    <div class="d">Podnožje</div>
+</div>
+<p>Elementi su smješteni pomoću svojstva <code>grid-template-areas.</code></p>
+</section>
+
+<section class="text3" id="float-section">
+    <hr />
+    <h2>3. Klasični rasporedi (Float & Columns)</h2>
+    <p>Prije Flexboxa i Grida, koristio se <strong>Float</strong> za bočno pozicioniranje elemenata. **Multi-column** omogućuje pakiranje sadržaja u stupce.</p>
+
+    <div class="float">
+        Float lijevo
+    </div>
+    <p class="float-text">
+        Ovaj tekst okružuje float element s lijeve strane. Klasično pozicioniranje pomoću float-a pomiče elemente ulijevo ili udesno dok dopušta da se okolni tekst omota oko njega. Također, ovaj odlomak je podijeljen u tri stupca pomoću svojstva **columns**, što je korisno za novinske ili tiskane rasporede.
+    </p>  
+</section>
+
+<figure class="yellow-box">
+<h3>Dodatne informacije</h3>
+<p>Sva tri modela su i dalje relevantna. Flexbox za komponente, Grid za cjelokupni raspored stranice,<br>
+     a Columns za tekstualne blokove.</p>
+</figure>
+
+<figure class="footer">
+<p>Primjer kreiran za demonstraciju CSS layout svojstava.</p>
+</figure>
+</body>
+</html>
