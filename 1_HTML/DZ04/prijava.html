@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prijava.css">
+</head>
+
+<body>
+
+    <img id="image-padlock" src="img/lokot.png" alt="Slika lokota">
+
+    <div id="container">
+        <fieldset>
+            <legend id="form-title">Sigurna Prijava</legend>
+            <div>
+                <label for="username">Korisničko Ime</label>
+                <input type="text" name="name" placeholder="admin" />
+            </div>
+            <div>
+                <label for="password">Lozinka</label>
+                <input type="password" name="password" placeholder="******" />
+            </div>
+            <div id="remember-me-container">
+                <input type="checkbox" name="rememberMe" />
+                <label for="remember">Zapamti uređaj</label>
+
+            </div>
+            <form action="https://origo.hr" method="get">
+                <button>Prijavi se</button>
+            </form>
+        </fieldset>
+    </div>
+
+    <table>
+        <caption>
+            <h4>Nedavne aktivnosti prijave</h4>
+        </caption>
+
+        <thead>
+            <tr>
+                <th>IP ADRESA</th>
+                <th>VRIJEME</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>192.168.1.15</td>
+                <td>12:45</td>
+                <td><span id="success">Uspjeh</span></td>
+            </tr>
+            <tr>
+                <td>10.0.0.52</td>
+                <td>Jučer</td>
+                <td><span id="error">Greška</span></td>
+            </tr>
+            <tr>
+                <td>88.102.x.x</td>
+                <td>01.12.</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Prikaz zadnja 3 pokušaja</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kamen.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="site-title">BUŠENJE KAMENA</div>
+            <div>
+                <ul>
+                    <li>POČETNA</li>
+                    <li>USLUGE</li>
+                    <li>CJENIK</li>
+                    <li>KONTAKT</li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="colored">
+            <div id="colored-div">
+                <h1>Preciznost u svakom milimetru</h1>
+                <p>Vodeća tvrtka za dijamantno bušenje, rezanje armiranog betona i kontrolirano rušenje.</p>
+                <form action="https://origo.hr" method="get">
+                    <button>ZATRAŽITE PONUDU</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Naše Usluge</h2>
+
+            <p class="centered">Koristimo najmoderniju tehnologiju za obradu kamena i betona.</p>
+
+            <div class="grey-box-container">
+                <div class="grey-box">
+                    <h3>Dijamantno bušenje</h3>
+                    <p>Bušenje rupa u betonu, cigli i kamenu promjera od 10mm do 500mm. Bez vibracija i prašine, idealno
+                        za instalacije.</p>
+                </div>
+                <div class="grey-box">
+                    <h3>Rezanje betona</h3>
+                    <p>Precizno rezanje zidova i podova dijamantnim pilama. Otvaranje otvora za vrata, prozore ili
+                        ventilacijske kanale.</p>
+                </div>
+                <div class="grey-box">
+                    <h3>Obrada kamena</h3>
+                    <p>Fino brušenje, poliranje i zaštita prirodnog kamena. Restauracija starih kamenih površina.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="about-company">
+                <h3>O tvrtki</h3>
+                <p>Tvrtka <strong>Bušenje Kamena d.o.o.</strong> osnovana je s ciljem pružanja vrhunskih građevinskih
+                    usluga specijaliziranih za beton i kamen. Naš tim stručnjaka</p>
+            </div>
+            <div id="divider"></div>
+            <div id="about-company-rest">
+                <p>
+                    koristi napredne metode kako bi osigurao statičku stabilnost objekata prilikom intervencija.
+                </p>
+                <p>
+                    Posjedujemo certifikate za rad na visini i rad u zatvorenim prostorima. <mark>Sigurnost i
+                        čistoća</mark> na gradilištu su nam prioriteti. Bilo da se radi o manjim kućnim popravcima ili
+                    velikim infrastrukturnim projektima, pristupamo s istom pažnjom.
+                </p>
+            </div>
+        </section>
+
+        <section id="prices">
+            <table>
+                <caption>
+                    <h2>Okvirni cjenik usluga (2024)</h2>
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>VRSTA USLUGE</th>
+                        <th>JEDINICA</th>
+                        <th>CIJENA (EUR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bušenje betona &#216 50mm</td>
+                        <td>cm dubine</td>
+                        <td>1.50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Bušenje betona &#216 110mm</td>
+                        <td>cm dubine</td>
+                        <td>2.20 €</td>
+                    </tr>
+                    <tr>
+                        <td>Rezanje zida (armirani beton)</td>
+                        <td>m<sup>2</sup></td>
+                        <td>Na upit</td>
+                    </tr>
+                    <tr>
+                        <td>Odvoz šute</td>
+                        <td>m<sup>3</sup></td>
+                        <td>50.00 €</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="table-help-text">
+                            <span> * Cijene su bez PDV-a i ovise o uvjetima na terenu.</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="contact">
+            <div id="contact-container">
+                <h2>Pošaljite upit</h2>
+                <fieldset>
+                    <legend>KONTAKT PODACI</legend>
+                    <div>
+                        <label for="name"><strong>Ime i Prezime:</strong></label>
+                        <input type="text" name="name" placeholder="Ivan Horvat" />
+                    </div>
+                    <div>
+                        <label for="email"><strong>Email adresa:</strong></label>
+                        <input type="text" name="email" placeholder="ivan@primjer.hr" />
+                    </div>
+                    <div>
+                        <label for="category"><strong>Vrsta radova</strong></label>
+                        <select name="category" id="category">
+                            <option value="wall">Bušenje zida</option>
+                            <option value="concrete">Bušenje betona</option>
+                            <option value="cut-wall">Rezanje zida</option>
+                            <option value="moving">Odvoz šute</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="job-description"><strong>Opis posla:</strong></label>
+                        <textarea rows="5"></textarea>
+                    </div>
+                    <div id="urgent-container">
+                        <input type="checkbox" name="urgent">
+                        <label for="urgent">Hitna intervencija</label>
+                    </div>
+                </fieldset>
+                <div id="workload-container">
+                    <h4>Opterećenost termina:</h4>
+                    <meter min="0" max="100" low="25" high="75" optimum="0" value="85"></meter>
+                    <p>Trenutno imamo veliku popunjenost termina</p>
+                    <form action="https://origo.hr" method="get">
+                        <button type="submit">POŠALJI UPIT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <b>Bušenje Kamena d.o.o.</b><br />
+            Industrijska cesta 5<br />
+            10000 Zagreb, Hrvatska<br />
+            Email: <a href="mailto:info@busenjekamena.hr">info@busenjekamena.hr</a>
+        </p>
+        <hr />
+        <p id="copyright">
+            &copy; 2024 Bušenje Kamena. Sva prava pridržana.
+        </p>
+    </footer>
+</body>
+
+</html>
