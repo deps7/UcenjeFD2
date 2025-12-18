@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="forma">
-            <h1>Novi Korisnik</h1>
+            <h1 id="prvi">Novi Korisnik</h1>
             <form action="#" method="get">
                 <div class="unos">
                     <label for="im">Ime i Prezime:</label>
@@ -30,6 +32,9 @@
                 <input type="submit" value="Spremi Korisnika">
             </form>
         </div>
+    </div>
+
+    <div class="user-list">
         <h1>Lista Korisnika</h1>
         <table>
             <thead>
@@ -49,7 +54,7 @@
                     <td>Administrator</td>
                     <td>Obriši</td>
                 </tr>
-                <tr>
+                <tr id="Marko">
                     <td>2</td>
                     <td>Marko Marić</td>
                     <td>marko@tvrtka.hr</td>
@@ -63,7 +68,7 @@
                     <td>Korisnik</td>
                     <td>Obriši</td>
                 </tr>
-                <tr>
+                <tr id="Luka">
                     <td>4</td>
                     <td>Luka Lukić</td>
                     <td>luka@tvrtka.hr</td>
@@ -74,4 +79,5 @@
         </table>
     </div>
 </body>
+
 </html>
